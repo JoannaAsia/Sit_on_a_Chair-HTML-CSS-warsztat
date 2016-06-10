@@ -1,0 +1,10 @@
+.main_width {
+	width: 1020px;
+	border: 1px solid blue;
+	margin: auto;
+
+}
+
+div {
+	border: 1px solid red;
+}
