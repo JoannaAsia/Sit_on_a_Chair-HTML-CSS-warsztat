@@ -1,3 +1,9 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
 .main_width {
 	width: 1020px;
 	border: 1px solid blue;
@@ -12,6 +18,7 @@ div {
 div#black {
 	background-color: black;
 	color: white;
+
 }
 
 p#logo {
@@ -43,7 +50,15 @@ li {
 }
 
 #header_div {
-	height:400px;
+	height:450px;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(227,224,227,1) 70%, rgba(219,219,219,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(40%, rgba(246,246,246,1)), color-stop(70%, rgba(227,224,227,1)), color-stop(100%, rgba(219,219,219,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(227,224,227,1) 70%, rgba(219,219,219,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(227,224,227,1) 70%, rgba(219,219,219,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(227,224,227,1) 70%, rgba(219,219,219,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(227,224,227,1) 70%, rgba(219,219,219,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb', GradientType=0 );
 }
 
 .inline_block {
@@ -52,15 +67,83 @@ li {
 	text-align: center;
 	width: 23%;
 
+
 }
 
 .arrow {
-	height: 400px;
 	width: 100px;
+	height: 100px;
+	margin: 150px 20px;
+	font-size: 80px;
+	color: turquoise;
 }
 
 #b_chair {
-	height: 300px;
+	height: 310px;
 	width: 420px;
-	margin-top: 40px;
+	margin: 40px 0;
+	border: 1px solid blue;
 }
+
+#header_text {
+	width: 300px;
+	height: 300px;
+	padding: 50px 0;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+.button {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	background-color: turquoise;
+	border-radius: 10px;
+	padding: 10px 20px;
+}
+
+.inline_block2 {
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid green;
+	margin: 30px 5px;
+}
+
+#section1_text {
+	width: 260px;
+	padding: 5px 20px;
+}
+
+h4 {
+	border-bottom: 5px solid turquoise;
+}
+
+.inline_block2 img {
+	width: 300px;
+}
+
+#container1 {
+	position: relative;
+	margin-left: 40px;
+}
+
+p.chair_img {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	width: 300px;
+	background-color: rgba(255,255,255, 0.5);
+	border-bottom: 5px solid turquoise;
+	line-height: 50px;
+	color: black;
+
+}
+
+#container2 {
+	position: relative;
+}
+
+
+

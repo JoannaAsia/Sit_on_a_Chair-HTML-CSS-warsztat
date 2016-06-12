@@ -1,0 +1,26 @@
+li {
+	display: inline-block;
+}
+
+ul.main > li {
+	position: relative;
+	line-height: 30px;
+}
+
+ul.main ul {
+	position: absolute;
+	top: 30px;
+	background: gray;
+	color: black;
+	display: none; 
+}
+
+ul.main li:hover > ul {
+	display: block;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
