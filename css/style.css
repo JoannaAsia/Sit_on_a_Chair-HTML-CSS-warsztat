@@ -1,6 +1,17 @@
+/* strzałka zła pozycja. napraw */
+
+@font-face {
+    font-family: 'ralewayextralight';
+    src: url('../fonts/raleway-extralight.woff2') format('woff2'),
+         url('../fonts/raleway-extralight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 	margin: 0;
 	padding: 0;
+	font-family: "ralewayextralight";
 }
 
 
@@ -152,7 +163,7 @@ div.chair_img p {
 }
 
 #section_background {
-	background-color: #f1f1f1;
+	background-color: rgb(230,230,230);
 }
 
 .bottom_border {
@@ -164,4 +175,35 @@ div.chair_img p {
 
 .white_board {
 	background-color: rgb(250,250,250);
+}
+
+
+
+
+
+/* styl footer */
+footer {
+	line-height: 40px
+}
+.foot_left {
+	float: left;
+}
+
+.foot_right {
+	display: inline-block;
+	float: right;
+}
+
+img.foot_right {
+	margin: 15px 5px;
+}
+
+p.foot_right {
+	text-transform: uppercase;
+	margin-left: 50px
+}
+
+p.foot_right span {
+	color: grey;
+	font-weight: bold;
 }
