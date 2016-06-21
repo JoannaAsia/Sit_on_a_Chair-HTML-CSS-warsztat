@@ -23,14 +23,14 @@
 <!-- header ze zdjęciem i tekstem -->
   		<div class="main_width" id="header_div">
 
-  			<div class="arrow inline_block"><</div>
+  			<div class="arrow inline_block"></div>
 
   			<img src="images/black_chair.png" id="b_chair" class="inline_block">
 
   			<div class="inline_block" id="header_text">
   				<h1>Sit <span>on</span> our <span>chair</span></h1>
-  				<p>Professor at Hampden-Sydney College in Virginia,tin words, consectetur, from a Lorem Ipsum passageor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum discovered the</p>
-          <br><br>
+  				<p>Professor at Hampden-Sydney College in Virginia,tin words, consectetur, from a Lorem Ipsum passageormpden-Sydney looked up one of the more obscura Lorem Ipsum discovered the</p>
+          <br>
 
   				<a href="http://onet.pl" class="button">Zobacz więcej</a>
   			</div>
@@ -42,39 +42,38 @@
   		<div class="main_width">
 
         <!-- chair claire -->
-  			<div class="inline_block2" id="container1">
+  			<div class="inlineBlockSec1" id="chairSec1Pic1">
   				
           <img src="images/box1_img.jpg">
           <div class="chair_img"><p>chair CLAIRE</p></div>
         </div>
         <!-- chair mar -->
-  			<div class="inline_block2" id="container2">
+  			<div class="inlineBlockSec1" id="chairSec1Pic2">
   				<img src="images/box2_img.jpg">
           <div class="chair_img"><p>chair MARGARITA</p></div>
         </div>
         <!-- box z tekstem -->
-  			<div class="inline_block2" id="section1_text">
+  			<div class="inlineBlockSec1" id="section1_text">
   				<div><h4>Finds all inputs</h4></div>
   				<p>Many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in don't look even slightly believable.</p>
-  				<p>scure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word discover</p>
+  				<p>scure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites</p>
   			</div>
   		</div>
   	</section>
     <!--sekcja 2 -->
   	<section>
-  		<div class="main_width" id="section_background">
+  		<div class="main_width" id="section2_background">
   			<h3 class="bottom_border">Cennik</h3>
         <!-- tablice w sekcji 2 -->
         <!-- tablica 1 basic plan -->
-        <div class="inline_block2">
-  				<div class="white_board">
+        <div class="inlineBlockSec2">
+  				<div class="planChoice">
             <h3>Basic plan</h3>
-  				  <div class="prize_circle">
+  				  <div class="price_circle">
   					 <p>8599 PLN/MSC</p>
   				  </div>
           </div>
-
-  				<div>
+  				<div class="choiceFeatures">
   					<p>Zakup towaru + dowóz</p>
   					<p>Serwis</p>
   				</div>
@@ -82,32 +81,32 @@
   				<div><a href="http://upc.com" class="button">Dołącz</a></div>
   			</div>
         <!-- tablica 2 standard plan -->
-  			<div class="inline_block2">
-  				<div>
+  			<div class="inlineBlockSec2">
+  				<div class="planChoice">
             <h3>Standard plan</h3>
-  				  <div class="prize_circle">
+  				  <div class="price_circle">
   					 <p>9599 PLN/MSC</p>
   				  </div>
           </div>
 
-  				<div>
+  				<div class="choiceFeatures">
   					<p>Zakup towaru + dowóz</p>
   					<p>Serwis</p>
   					<p>Gwarancja 5 lat</p>
   				</div>
 
-  				<div><a href="http://upc.com">Dołącz</a></div>
+  				<div><a href="http://upc.com" class="button">Dołącz</a></div>
   			</div>
         <!-- tablica 3 advance plan -->
-  			<div class="inline_block2">
-          <div class="white_board">
+  			<div class="inlineBlockSec2">
+          <div class="planChoice">
   				  <h3>Advance plan</h3>
-  				  <div class="prize_circle">
+  				  <div class="price_circle">
   					 <p>21100 PLN/MSC</p>
   				  </div>
           </div>
 
-  				<div>
+  				<div class="choiceFeatures">
   					<p>Zakup towaru + dowóz</p>
   					<p>Serwis</p>
   					<p>Gwarancja 6 lat</p>
@@ -122,22 +121,25 @@
   		<div class="main_width">
   			<h3 class="bottom_border">Kontakt</h3>
 
-  			<form>
-  				<input type="text" placeholder="Imię">
+  			<form class="inlineBlockSec3">
+          <input type="text" placeholder="Imię">
+          <br/>
   				<input type="text" placeholder="Email">
+          <br/>
   				<input type="text" placeholder="Wiadomość">
   			</form>
+        <div class="inlineBlockSec3">
+  			 <img src="images/red_chair.png">
 
-  			<img src="images/red_chair.png">
+  			 <form>
+  			   <input type="checkbox">Zgadzam się na przetwarzanie danych osobowych
+  		   </form>
 
-  			<form>
-  			 	<input type="checkbox">Zgadzam się na przetwarzanie danych osobowych
-  			</form>
-
-  			<!--<button>Wyślij</button> -->
-  			<form>
-  				<input type="button" value="Wyślij">
-  			</form>
+  			 <!--<button>Wyślij</button> -->
+  			 <form>
+  				<input type="submit" class="button" value="Wyślij">
+  			 </form>
+        </div>
 
   		</div>
   	</section>

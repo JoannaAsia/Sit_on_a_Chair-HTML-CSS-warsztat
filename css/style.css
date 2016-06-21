@@ -42,7 +42,7 @@ p#logo {
 
 span {
 	color: turquoise;
-	font-weight: bold;
+	font-weight: bolder;
 }
 
 nav {
@@ -61,7 +61,7 @@ li {
 }
 
 #header_div {
-	height:450px;
+	/*height:450px;*/
 	background: rgba(255,255,255,1);
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(227,224,227,1) 70%, rgba(219,219,219,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(40%, rgba(246,246,246,1)), color-stop(70%, rgba(227,224,227,1)), color-stop(100%, rgba(219,219,219,1)));
@@ -76,7 +76,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
-	width: 23%;
 
 
 }
@@ -84,22 +83,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .arrow {
 	width: 100px;
 	height: 100px;
-	margin: 150px 20px;
+	margin: 150px 10px;
 	font-size: 80px;
 	color: turquoise;
 }
 
 #b_chair {
-	height: 310px;
-	width: 420px;
-	margin: 40px 0;
+	height: 300px;
+	width: 390px;
+	margin: 50px 0;
 	border: 1px solid blue;
 }
 
 #header_text {
-	width: 300px;
-	height: 300px;
-	padding: 50px 0;
+	width: 365px;
+	height: 260px;
+	margin: 50px 0;
+	padding: 20px 0;
 }
 
 h1 {
@@ -115,7 +115,7 @@ h1 {
 	padding: 10px 20px;
 }
 
-.inline_block2 {
+.inlineBlockSec1 {
 	display: inline-block;
 	vertical-align: top;
 	border: 1px solid green;
@@ -133,11 +133,11 @@ h4 {
 	width: 120px;
 }
 
-.inline_block2 img {
+.inlineBlockSec1 img {
 	width: 300px;
 }
 
-#container1 {
+#chairSec1Pic1 {
 	position: relative;
 	margin-left: 40px;
 }
@@ -158,12 +158,12 @@ div.chair_img p {
 	width: 200px;
 }
 
-#container2 {
+#chairSec1Pic2 {
 	position: relative;
 }
 
-#section_background {
-	background-color: rgb(230,230,230);
+#section2_background {
+	background-color: rgb(243,243,243);
 }
 
 .bottom_border {
@@ -173,9 +173,86 @@ div.chair_img p {
 	margin-left: 40px;
 }
 
-.white_board {
+.inlineBlockSec2{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid green;
+	margin: 30px 5px;
+	width: 300px;
+	height: 420px;
+}
+
+.inlineBlockSec2:first-of-type{
+	margin-left: 40px;
+}
+.inlineBlockSec2:nth-of-type(3){
+	margin-right: 40px;
+}
+
+
+.planChoice {
 	background-color: rgb(250,250,250);
 }
+
+.price_circle{
+	border: 1px solid grey;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin: 20px 100px;
+	text-align: center;
+	background-color: white;
+	color: grey;
+}
+.price_circle p{
+	margin-top: 30px;
+}
+.choiceFeatures {
+	line-height: 40px;
+	vertical-align: top
+
+}
+
+.choiceFeatures p:nth-child(2n+1){
+	background-color: rgb(230,230,230);
+	color: rgb(180,180,180);
+
+}
+
+.inlineBlockSec3{
+	display: inline-block;
+	vertical-align: top;
+	height: 300px;
+}
+
+
+
+
+
+/* sekcja 3 */
+
+input[type=text]{
+	width: 550px;
+	height: 30px;
+	vertical-align: top;
+	margin: 5px 40px;
+}
+
+input[type=text]:nth-of-type(3){
+	height: 150px;
+}
+
+div.inlineBlockSec3 {
+	width: 350px;
+	margin-top: -30px;
+}
+input[type=submit]{
+	margin-top: 20px;
+	width: 100%;
+}
+
+
 
 
 
