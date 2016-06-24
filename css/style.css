@@ -10,7 +10,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "ralewayregular";
+	font-family: "ralewayregular", sans-serif;
 }
 
 /*szerokość głównego bloku na stronie*/
@@ -207,6 +207,7 @@ div.chair_img p {
 .bottomBorder {
 	width: 300px;
 	margin-left: 40px;
+	padding-top: 20px;
 	border-bottom: 5px solid turquoise;
 	text-transform: uppercase;
 }
@@ -235,88 +236,54 @@ div.chair_img p {
 .inlineBlockSec2:nth-of-type(3){
 	margin-right: 40px;
 }
-/*kółko z kropką nad tablicami*/
-.dots {
-	background-color: white;
-	height: 60px;
-	width: 60px;
-	border: 1px solid rgb(230,230,230);
-	border-radius: 50%;
-	position: absolute;
-	top: -30px;
-	left: 120px;
-}
 
-.dots > span {
-	display: inline-block;
-	margin: 14px;
-	height: 30px;
-	width: 30px;
-	border: 1px solid rgb(240,240,240);
-	border-radius: 50%;
-	background-color: rgb(240,240,240);
-}
-
-#standardPlanDot{
-	background-color: turquoise;
-	border: none;
-}
-
-#standardPlanDot > span{
-	background-color: white;
-	border: none;
-}
-
+/*stylowanie tablic sekcji 2*/
 .planChoice{
 	background-color: rgb(250,250,250);
 	padding: 5px 0;
 }
+
 .planChoice h3{
+	color: turquoise;
 	margin-top: 30px;
 	text-transform: uppercase;
 }
-.planChoiceStandard{
+/*środkowa tablica*/
+.standardPlan{
 	color: white;
 	background-color: turquoise;
     padding: 5px 0;
 }
 
-.planChoiceStandard h3{
+.standardPlan h3{
 	margin-top: 30px;
 	text-transform: uppercase;
 }
 
-
-
-/*DOKOŃCZ KOLOR W DRUGIM  KÓŁKUUU*/
-
-
-
+/*okrąg z ceną*/
 .priceCircle{
 	color: grey;
 	background-color: white;
 	height: 100px;
 	width: 100px;
 	margin: 20px 100px;
-	border: 1px solid grey;
+	border: 1px solid rgb(230,230,230);
 	border-radius: 50%;
 	font-size: 16px;
 	font-weight: 900;
 	text-align: center;
-	
 }
 
 .priceCircle p{
 	margin-top: 30px;
-
 }
-
-.planChoiceStandard .priceCircle{
+/*okrąg z ceną w środkowej tablicy*/
+.standardPriceCircle{
 	color: turquoise;
-	border: 1px solid turquoise;
+	background-color: white;
 }
 
-
+/*stylowanie paragrafów w tablicach sekcji 2*/
 .planFeatures p{
 	line-height: 40px;
 	margin: 0;
@@ -337,11 +304,11 @@ div.chair_img p {
 	margin: 0;
 	line-height: 40px;
 }
-
-div#btnOne{
+/* stylowanie divów i należących do nich przycisków DOŁĄCZ*/
+#btnOne{
+	background-color: rgb(250,250,250);
 	height: 146px;
 	position: relative;
-	background-color: rgb(250,250,250);
 }
 
 #btnOne a {
@@ -351,9 +318,9 @@ div#btnOne{
 }
 
 #btnTwo{
+	background-color: turquoise;
 	height: 106px;
 	position: relative;
-	background-color: turquoise;
 }
 
 #btnTwo a {
@@ -376,25 +343,57 @@ div#btnOne{
 	right: 100px;
 }
 
-
-
-/* section 3 style */
-.inlineBlockSec3{
-	display: inline-block;
-	vertical-align: top;
-	height: 300px;
+/*kółko z kropką nad tablicami*/
+.dot {
+	background-color: white;
+	height: 60px;
+	width: 60px;
+	border: 2px solid rgb(230,230,230);
+	border-radius: 50%;
+	position: absolute;
+	top: -30px;
+	left: 120px;
 }
 
+.dot > span {
+	background-color: rgb(240,240,240);
+	height: 30px;
+	width: 30px;
+	margin: 14px;
+	border: 1px solid rgb(240,240,240);
+	border-radius: 50%;
+	display: inline-block;
+}
+/*kółko w środkowym elemencie*/
+#standardPlanDot{
+	background-color: turquoise;
+	border: none;
+}
+
+#standardPlanDot > span{
+	background-color: white;
+	border: none;
+}
+/* section 3 style */
+.inlineBlockSec3{
+	height: 300px;
+	vertical-align: top;
+	display: inline-block;
+}
+/*styl formularza*/
+form *{
+	font-family: "ralewayregular";
+}
 
 input[type=text]{
-	width: 530px;
 	height: 30px;
-	vertical-align: top;
+	width: 530px;
 	margin: 5px 0 20px 40px;
+	vertical-align: top;
 }
 
 input[type=text]:nth-of-type(3){
-	height: 150px;
+	padding-bottom: 120px;
 }
 
 div.inlineBlockSec3 {
@@ -402,24 +401,19 @@ div.inlineBlockSec3 {
 	margin: -30px 40px 0 40px;
 }
 
-input[type=checkbox]{
-	display:none;
-}
-
-
-input[type=submit]{
+/*przycisk wyślij*/
+.submitButton{
+	color: white;
+	background-color: turquoise;
+	height: 50px;
+	width: 90%;
 	margin-top: 10px;
-	width: 100%;
-	font-size: 20px;
+	border: 1px solid turquoise;
+	border-radius: 10px;
+	font-size: 22px;
 }
 
-
-
-
-
-
-
-/* styl footer */
+/* stylowanie footera */
 footer {
 	line-height: 40px
 }
