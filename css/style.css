@@ -74,12 +74,14 @@ ul.mainList li:hover > ul {
 }
 
 ul.mainList ul a {
+	color: white;
+	background-color: black;
 	padding: 10px 20px;
+	text-decoration: none;
     display: block;
-    background-color: black;
 }
 /*trójkącik*/
- .arrowUp{
+ .triangleUp{
 	width: 0; 
 	height: 0; 
 	background-color: transparent;
@@ -107,10 +109,10 @@ span {
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb', GradientType=0 );
 }
 
-.inline_block {
-	display: inline-block;
-	vertical-align: top;
+.inlineBlockHeader {
 	text-align: center;
+	vertical-align: top;
+	display: inline-block;
 }
 
 .arrow {
@@ -121,31 +123,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	color: turquoise;
 }
 
-#b_chair {
+#blackChair {
 	height: 300px;
 	width: 390px;
 	margin: 50px 0;
-	
 }
 
-#header_text {
-	width: 365px;
+#headerText {
 	height: 260px;
+	width: 365px;
 	margin: 50px 0;
 	padding: 20px 0;
 }
 
-h1 {
+#headerText h1 {
 	text-transform: uppercase;
 }
 
-.button {
-	text-decoration: none;
-	text-transform: uppercase;
+a.button {
 	color: white;
 	background-color: turquoise;
-	border-radius: 10px;
 	padding: 10px 20px;
+	border-radius: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .inlineBlockSec1 {
@@ -170,7 +171,7 @@ h4 {
 	width: 300px;
 }
 
-#chairSec1Pic1 {
+#chairClaire {
 	position: relative;
 	margin-left: 40px;
 }
@@ -192,57 +193,58 @@ div.chair_img p {
 	font-weight: bolder;
 }
 
-#chairSec1Pic2 {
+#chairMargarita {
 	position: relative;
 }
 
 #section2Background {
 	background-color: rgb(243,243,243);
 }
+
 /* section 2 style */
 
-.bottom_border {
-	border-bottom: 5px solid turquoise;
+/*podkreślenie nagłówków*/
+.bottomBorder {
 	width: 300px;
-	text-transform: uppercase;
 	margin-left: 40px;
+	border-bottom: 5px solid turquoise;
+	text-transform: uppercase;
 }
 
+/*elementy sekcji 2 ustawione inline-block*/
 .inlineBlockSec2{
-	display: inline-block;
+	height: 430px;
+	width: 300px;
+	margin: 30px 4px;
+	border: 2px solid rgb(230,230,230);
 	vertical-align: middle;
 	text-align: center;
-	margin: 30px 4px;
-	width: 300px;
-	height: 430px;
 	position: relative;
-	border: 2px solid rgb(230,230,230);
-}
+	display: inline-block;
 
+}
+/*margines elementu najbardziej po lewej*/
 .inlineBlockSec2:first-of-type{
 	margin-left: 40px;
 }
+/*border elementu po środku*/
+.inlineBlockSec2:nth-of-type(2){
+	border: 2px solid turquoise;
+}
+/*margines elementu najbardziej po prawej*/
 .inlineBlockSec2:nth-of-type(3){
 	margin-right: 40px;
 }
-
+/*kółko z kropką nad tablicami*/
 .dots {
+	background-color: white;
 	height: 60px;
 	width: 60px;
+	border: 1px solid rgb(230,230,230);
+	border-radius: 50%;
 	position: absolute;
 	top: -30px;
 	left: 120px;
-	border: 1px solid rgb(230,230,230);
-	border-radius: 50%;
-	background-color: white;
-}
-
-#standardPlanDot{
-	background-color: turquoise;
-}
-
-#standardPlanDot > span{
-	background-color: white;
 }
 
 .dots > span {
@@ -255,64 +257,89 @@ div.chair_img p {
 	background-color: rgb(240,240,240);
 }
 
+#standardPlanDot{
+	background-color: turquoise;
+	border: none;
+}
 
-.planHeader{
-	margin-top: 30px;
+#standardPlanDot > span{
+	background-color: white;
+	border: none;
 }
 
 .planChoice{
 	background-color: rgb(250,250,250);
 	padding: 5px 0;
 }
-.planChoiceMiddle{
+.planChoice h3{
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+.planChoiceStandard{
 	color: white;
 	background-color: turquoise;
     padding: 5px 0;
 }
+
+.planChoiceStandard h3{
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+
+
 
 /*DOKOŃCZ KOLOR W DRUGIM  KÓŁKUUU*/
 
 
 
 .priceCircle{
+	color: grey;
+	background-color: white;
+	height: 100px;
+	width: 100px;
+	margin: 20px 100px;
 	border: 1px solid grey;
 	border-radius: 50%;
-	width: 100px;
-	height: 100px;
-	margin: 20px 100px;
+	font-size: 16px;
+	font-weight: 900;
 	text-align: center;
-	background-color: white;
-	color: grey;
+	
 }
-
 
 .priceCircle p{
 	margin-top: 30px;
 
 }
-.choiceFeatures {
-	line-height: 40px;
+
+.planChoiceStandard .priceCircle{
+	color: turquoise;
+	border: 1px solid turquoise;
 }
-.choiceFeatures p{
+
+
+.planFeatures p{
+	line-height: 40px;
 	margin: 0;
 }
 
-.choiceFeatures p:nth-child(2n+1){
+.planFeatures p:nth-child(2n+1){
+	color: rgb(150,150,150);
 	background-color: rgb(230,230,230);
+}
+
+.planFeatures p:nth-child(2n+2){
 	color: rgb(150,150,150);
 }
 
-.choiceFeatures p:nth-child(2n+2){
+#standardPlanFeatures p:nth-child(2n+1){
 	color: rgb(150,150,150);
-}
-
-#standardPlanP p:nth-child(2n+1){
 	background-color: rgb(250,250,250);
-	color: rgb(150,150,150);
+	margin: 0;
+	line-height: 40px;
 }
 
 div#btnOne{
-	height: 151px;
+	height: 146px;
 	position: relative;
 	background-color: rgb(250,250,250);
 }
@@ -324,7 +351,7 @@ div#btnOne{
 }
 
 #btnTwo{
-	height: 111px;
+	height: 106px;
 	position: relative;
 	background-color: turquoise;
 }
@@ -338,7 +365,7 @@ div#btnOne{
 }
 
 #btnThree{
-	height: 71px;
+	height: 66px;
 	position: relative;
 	background-color: rgb(250,250,250);
 }
