@@ -1,9 +1,8 @@
-/* strzałka zła pozycja. napraw */
-
+/*import czcionki*/
 @font-face {
-    font-family: 'ralewayextralight';
-    src: url('../fonts/raleway-extralight.woff2') format('woff2'),
-         url('../fonts/raleway-extralight.woff') format('woff');
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular.woff2') format('woff2'),
+         url('../fonts/raleway-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,57 +10,93 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "ralewayextralight";
+	font-family: "ralewayregular";
 }
 
-
+/*szerokość głównego bloku na stronie*/
 .main_width {
 	width: 1020px;
-	border: 1px solid blue;
 	margin: auto;
 }
 
-div {
-	border: 1px solid red;
-}
 
 /* header style */
-div#black {
-	background-color: black;
+#headerBlack {
 	color: white;
-
+	background-color: black;
 }
-
+/*logo w headerze*/
 p#logo {
-	text-transform: uppercase;
 	float: left;
-	padding: 10px;
-	margin-left: 15px;
-
+	line-height: 20px;	
+	margin: 0;
+	padding: 15px;
+	text-transform: uppercase;
 }
-
-span {
-	color: turquoise;
-	font-weight: bolder;
-}
-
+/*menu*/
 nav {
 	float:right;
-}
-
-li {
-	display: inline-block;
-	text-transform: uppercase;
-	padding: 10px;
-	margin-right: 15px;
 }
 
 .clear {
 	clear: both;
 }
 
-#header_div {
-	/*height:450px;*/
+ul.mainList {
+	margin: 0;
+}
+
+ul.mainList > li {
+	display: inline-block;
+}
+
+ul.mainList > li > a {
+	color: white;
+	line-height: 20px;
+	padding: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+}
+
+/*rozwijane menu*/
+ul.mainList ul {
+	color: white;
+	display: none; 
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	list-style-type: none;
+}
+
+ul.mainList li:hover > ul {
+	display: block;
+}
+
+ul.mainList ul a {
+	padding: 10px 20px;
+    display: block;
+    background-color: black;
+}
+/*trójkącik*/
+ .arrowUp{
+	width: 0; 
+	height: 0; 
+	background-color: transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+  	border-bottom: 10px solid black;
+  	position: relative;
+  	left: 50px;
+}
+/*wszystkie pogrubione turkusowe napisy*/
+span {
+	color: turquoise;
+	font-weight: 900;
+}
+
+/*cd header ze zdjęciem*/
+#headerBackground{
 	background: rgba(255,255,255,1);
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(227,224,227,1) 70%, rgba(219,219,219,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(40%, rgba(246,246,246,1)), color-stop(70%, rgba(227,224,227,1)), color-stop(100%, rgba(219,219,219,1)));
@@ -76,8 +111,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
-
-
 }
 
 .arrow {
@@ -92,7 +125,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	height: 300px;
 	width: 390px;
 	margin: 50px 0;
-	border: 1px solid blue;
+	
 }
 
 #header_text {
@@ -118,14 +151,14 @@ h1 {
 .inlineBlockSec1 {
 	display: inline-block;
 	vertical-align: top;
-	border: 1px solid green;
 	margin: 30px 5px;
 	width: 300px;
 }
 
-#section1_text {
+#section1Text {
 	width: 260px;
-	padding: 5px 20px;
+	padding: 0 20px;
+	border: 1px solid rgb(230,230,230);
 }
 
 h4 {
@@ -156,15 +189,17 @@ div.chair_img p {
 	border-bottom: 5px solid turquoise;
 	margin-left: 15px;
 	width: 200px;
+	font-weight: bolder;
 }
 
 #chairSec1Pic2 {
 	position: relative;
 }
 
-#section2_background {
+#section2Background {
 	background-color: rgb(243,243,243);
 }
+/* section 2 style */
 
 .bottom_border {
 	border-bottom: 5px solid turquoise;
@@ -177,10 +212,11 @@ div.chair_img p {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
-	border: 1px solid green;
-	margin: 30px 5px;
+	margin: 30px 4px;
 	width: 300px;
-	height: 420px;
+	height: 430px;
+	position: relative;
+	border: 2px solid rgb(230,230,230);
 }
 
 .inlineBlockSec2:first-of-type{
@@ -190,12 +226,55 @@ div.chair_img p {
 	margin-right: 40px;
 }
 
-
-.planChoice {
-	background-color: rgb(250,250,250);
+.dots {
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	top: -30px;
+	left: 120px;
+	border: 1px solid rgb(230,230,230);
+	border-radius: 50%;
+	background-color: white;
 }
 
-.price_circle{
+#standardPlanDot{
+	background-color: turquoise;
+}
+
+#standardPlanDot > span{
+	background-color: white;
+}
+
+.dots > span {
+	display: inline-block;
+	margin: 14px;
+	height: 30px;
+	width: 30px;
+	border: 1px solid rgb(240,240,240);
+	border-radius: 50%;
+	background-color: rgb(240,240,240);
+}
+
+
+.planHeader{
+	margin-top: 30px;
+}
+
+.planChoice{
+	background-color: rgb(250,250,250);
+	padding: 5px 0;
+}
+.planChoiceMiddle{
+	color: white;
+	background-color: turquoise;
+    padding: 5px 0;
+}
+
+/*DOKOŃCZ KOLOR W DRUGIM  KÓŁKUUU*/
+
+
+
+.priceCircle{
 	border: 1px solid grey;
 	border-radius: 50%;
 	width: 100px;
@@ -205,21 +284,74 @@ div.chair_img p {
 	background-color: white;
 	color: grey;
 }
-.price_circle p{
+
+
+.priceCircle p{
 	margin-top: 30px;
+
 }
 .choiceFeatures {
 	line-height: 40px;
-	vertical-align: top
-
+}
+.choiceFeatures p{
+	margin: 0;
 }
 
 .choiceFeatures p:nth-child(2n+1){
 	background-color: rgb(230,230,230);
-	color: rgb(180,180,180);
-
+	color: rgb(150,150,150);
 }
 
+.choiceFeatures p:nth-child(2n+2){
+	color: rgb(150,150,150);
+}
+
+#standardPlanP p:nth-child(2n+1){
+	background-color: rgb(250,250,250);
+	color: rgb(150,150,150);
+}
+
+div#btnOne{
+	height: 151px;
+	position: relative;
+	background-color: rgb(250,250,250);
+}
+
+#btnOne a {
+	position: absolute;
+	right: 100px;
+	bottom: 20px;
+}
+
+#btnTwo{
+	height: 111px;
+	position: relative;
+	background-color: turquoise;
+}
+
+#btnTwo a {
+	color: turquoise;
+	background-color: white;
+	position: absolute;
+	bottom: 20px;
+	right: 100px;
+}
+
+#btnThree{
+	height: 71px;
+	position: relative;
+	background-color: rgb(250,250,250);
+}
+
+#btnThree a{
+	position: absolute;
+	bottom: 20px;
+	right: 100px;
+}
+
+
+
+/* section 3 style */
 .inlineBlockSec3{
 	display: inline-block;
 	vertical-align: top;
@@ -227,16 +359,11 @@ div.chair_img p {
 }
 
 
-
-
-
-/* sekcja 3 */
-
 input[type=text]{
-	width: 550px;
+	width: 530px;
 	height: 30px;
 	vertical-align: top;
-	margin: 5px 40px;
+	margin: 5px 0 20px 40px;
 }
 
 input[type=text]:nth-of-type(3){
@@ -245,11 +372,18 @@ input[type=text]:nth-of-type(3){
 
 div.inlineBlockSec3 {
 	width: 350px;
-	margin-top: -30px;
+	margin: -30px 40px 0 40px;
 }
+
+input[type=checkbox]{
+	display:none;
+}
+
+
 input[type=submit]{
-	margin-top: 20px;
+	margin-top: 10px;
 	width: 100%;
+	font-size: 20px;
 }
 
 
@@ -264,11 +398,14 @@ footer {
 }
 .foot_left {
 	float: left;
+	font-size: 12px;
+	margin-left: 40px;
 }
 
 .foot_right {
 	display: inline-block;
 	float: right;
+	margin-right: 40px;
 }
 
 img.foot_right {

@@ -9,33 +9,48 @@
  <!-- header -->
   	<header>
       <!-- navigation bar -->
-  		<div id="black" class="main_width">
-  			<p id="logo">Sit <span>on</span> chair</p>
-  			<nav>
-  				<ul>
-  					<li>O firmie</li>
-  					<li>Galeria</li>
-  					<li>Kontakt</li>
+  		<div id="headerBlack">
+        <div class="main_width">
+  			 <p id="logo">Sit <span>on</span> chair</p>
+  			 <nav>
+  				<ul class="mainList">
+            <!-- rozwijana lista -->
+  					<li><a href="http://onet.pl">O firmie</a>
+
+              <ul>
+                <li class="arrowUp"></li>
+                <li><a hreft="http://coderslab.pl">Aktualności</a></li>
+                <li><a hreft="http://coderslab.pl">Nasz team</a></li>
+                <li><a hreft="http://coderslab.pl">Historia</a></li>
+              </ul>
+              
+            </li>
+            
+  					<li><a href="http://onet.pl">Galeria</a></li>
+  					<li><a href="http://onet.pl">Kontakt</a></li>
   				</ul>
   			</nav>
-  		<div class="clear"></div>	
+  		  <div class="clear"></div>	
+      </div>
   		</div>
 <!-- header ze zdjęciem i tekstem -->
-  		<div class="main_width" id="header_div">
+      <div id="headerBackground">
+  		  <div class="main_width">
 
-  			<div class="arrow inline_block"></div>
+  			 <div class="arrow inline_block"><</div>
 
-  			<img src="images/black_chair.png" id="b_chair" class="inline_block">
+  			 <img src="images/black_chair.png" id="b_chair" class="inline_block">
 
-  			<div class="inline_block" id="header_text">
-  				<h1>Sit <span>on</span> our <span>chair</span></h1>
-  				<p>Professor at Hampden-Sydney College in Virginia,tin words, consectetur, from a Lorem Ipsum passageormpden-Sydney looked up one of the more obscura Lorem Ipsum discovered the</p>
-          <br>
+  			 <div class="inline_block" id="header_text">
+  				  <h1>Sit <span>on</span> our <span>chair</span></h1>
+  				  <p>Professor at Hampden-Sydney College in Virginia,tin words, consectetur, from a Lorem Ipsum passageormpden-Sydney looked up one of the more obscura Lorem Ipsum discovered the</p>
+            <br>
 
-  				<a href="http://onet.pl" class="button">Zobacz więcej</a>
-  			</div>
-  			<div class="arrow inline_block">></div>
-  		</div>
+  				  <a href="http://onet.pl" class="button">Zobacz więcej</a>
+  			 </div>
+  			 <div class="arrow inline_block">></div>
+  		  </div>
+      </div>
   	</header>
     <!-- sekcja 1 -->
   	<section>
@@ -53,7 +68,7 @@
           <div class="chair_img"><p>chair MARGARITA</p></div>
         </div>
         <!-- box z tekstem -->
-  			<div class="inlineBlockSec1" id="section1_text">
+  			<div class="inlineBlockSec1" id="section1Text">
   				<div><h4>Finds all inputs</h4></div>
   				<p>Many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in don't look even slightly believable.</p>
   				<p>scure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites</p>
@@ -62,47 +77,56 @@
   	</section>
     <!--sekcja 2 -->
   	<section>
-  		<div class="main_width" id="section2_background">
+      <div id="section2Background">
+  		<div class="main_width">
   			<h3 class="bottom_border">Cennik</h3>
         <!-- tablice w sekcji 2 -->
         <!-- tablica 1 basic plan -->
         <div class="inlineBlockSec2">
   				<div class="planChoice">
-            <h3>Basic plan</h3>
-  				  <div class="price_circle">
-  					 <p>8599 PLN/MSC</p>
+            <h3 class="planHeader">Basic plan</h3>
+  				  <div class="priceCircle">
+  					 <p>85<sup>99</sup> PLN/MSC</p>
   				  </div>
           </div>
   				<div class="choiceFeatures">
   					<p>Zakup towaru + dowóz</p>
   					<p>Serwis</p>
   				</div>
-
-  				<div><a href="http://upc.com" class="button">Dołącz</a></div>
+  				<div id="btnOne"><a href="http://upc.com" class="button">Dołącz</a></div>
+          <!-- dots on top -->
+          <div class="dots">
+            <span></span>
+          </div>
   			</div>
+        
         <!-- tablica 2 standard plan -->
   			<div class="inlineBlockSec2">
-  				<div class="planChoice">
-            <h3>Standard plan</h3>
-  				  <div class="price_circle">
-  					 <p>9599 PLN/MSC</p>
+  				<div class="planChoiceMiddle">
+            <h3 class="planHeader">Standard plan</h3>
+  				  <div class="priceCircle">
+  					 <p>95<sup>99</sup> PLN/MSC</p>
   				  </div>
           </div>
 
-  				<div class="choiceFeatures">
+  				<div class="choiceFeatures" id="standardPlanP">
   					<p>Zakup towaru + dowóz</p>
   					<p>Serwis</p>
   					<p>Gwarancja 5 lat</p>
   				</div>
 
-  				<div><a href="http://upc.com" class="button">Dołącz</a></div>
+  				<div id="btnTwo"><a href="http://upc.com" class="button">Dołącz</a></div>
+           <!-- dots on top -->
+          <div class="dots" id="standardPlanDot">
+            <span></span>
+          </div>
   			</div>
         <!-- tablica 3 advance plan -->
   			<div class="inlineBlockSec2">
           <div class="planChoice">
-  				  <h3>Advance plan</h3>
-  				  <div class="price_circle">
-  					 <p>21100 PLN/MSC</p>
+  				  <h3 class="planHeader">Advance plan</h3>
+  				  <div class="priceCircle">
+  					 <p>211<sup>00</sup> PLN/MSC</p>
   				  </div>
           </div>
 
@@ -112,9 +136,14 @@
   					<p>Gwarancja 6 lat</p>
   					<p>Porady projektanta</p>
   				</div>
-  				<div><a href="http://upc.com" class="button">Dołącz</a></div>
+  				<div id="btnThree"><a href="http://upc.com" class="button">Dołącz</a></div>
+          <!-- dots on top -->
+          <div class="dots">
+            <span></span>
+          </div>
   			</div>
   		</div>
+      </div>
   	</section>
     <!-- sekcja 3 -->
   	<section>
@@ -132,12 +161,16 @@
   			 <img src="images/red_chair.png">
 
   			 <form>
-  			   <input type="checkbox">Zgadzam się na przetwarzanie danych osobowych
+  			   <input type="checkbox" name="checkbox1" id="customCheckbox">
+           <label for="checkbox1">Zgadzam się na przetwarzanie danych osobowych
+           </label>
+           
   		   </form>
+         
 
   			 <!--<button>Wyślij</button> -->
   			 <form>
-  				<input type="submit" class="button" value="Wyślij">
+  				  <input type="submit" class="button" value="WYŚLIJ">
   			 </form>
         </div>
 
@@ -148,10 +181,10 @@
   		<div class="main_width">
   			<p class="foot_left">Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
         <p class="foot_right">Sit <span>on</span> chair</p>
-        <img src="images/twitter.png" class="foot_right">
-        <img src="images/pinterest.png" class="foot_right">
-        <img src="images/vimeo.png" class="foot_right">
-  			<img src="images/flickr.png" class="foot_right">
+        <a href="http://twitter.com"><img src="images/twitter.png" class="foot_right"></a>
+        <a href="http://pinterest.com"><img src="images/pinterest.png" class="foot_right"></a>
+        <a href="http://vimeo.com"><img src="images/vimeo.png" class="foot_right"></a>
+  			<a href="http://flickr.com"><img src="images/flickr.png" class="foot_right"></a>
   			
   			
   			
