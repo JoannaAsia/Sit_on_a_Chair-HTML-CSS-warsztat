@@ -99,6 +99,7 @@ span {
 
 /*cd header ze zdjęciem*/
 #headerBackground{
+	padding: 10px;
 	background: rgba(255,255,255,1);
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(227,224,227,1) 70%, rgba(219,219,219,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(40%, rgba(246,246,246,1)), color-stop(70%, rgba(227,224,227,1)), color-stop(100%, rgba(219,219,219,1)));
@@ -150,10 +151,12 @@ a.button {
 }
 
 .inlineBlockSec1 {
+	width: 300px;
+	margin: 40px 5px;
 	display: inline-block;
 	vertical-align: top;
-	margin: 30px 5px;
-	width: 300px;
+	
+	
 }
 
 #section1Text {
@@ -199,6 +202,7 @@ div.chair_img p {
 
 #section2Background {
 	background-color: rgb(243,243,243);
+	padding: 10px;
 }
 
 /* section 2 style */
@@ -376,7 +380,7 @@ div.chair_img p {
 }
 /* section 3 style */
 .inlineBlockSec3{
-	height: 300px;
+	height: 400px;
 	vertical-align: top;
 	display: inline-block;
 }
@@ -385,14 +389,18 @@ form *{
 	font-family: "ralewayregular";
 }
 
-input[type=text]{
-	height: 30px;
-	width: 530px;
-	margin: 5px 0 20px 40px;
+.inlineBlockSec3 input[type=text]{
+	height: 50px;
+	width: 520px;
+	margin: 5px 0 15px 40px;
+	padding-left: 10px;
+	border: 1px solid turquoise;
 	vertical-align: top;
+	font-size: 20px;
+
 }
 
-input[type=text]:nth-of-type(3){
+.inlineBlockSec3 input[type=text]:nth-of-type(3){
 	padding-bottom: 120px;
 }
 
@@ -400,6 +408,35 @@ div.inlineBlockSec3 {
 	width: 350px;
 	margin: -30px 40px 0 40px;
 }
+
+/*CHECKBOX!!!!!!!!*/
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label p {
+    display: inline-block;
+    width: 48px;
+    height: 40px;
+    margin: 20px 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid lightgrey;
+    float: left;
+}
+
+input[type="checkbox"]:checked + label p {
+    background: url("../images/form_ok.jpg") top no-repeat;
+}
+
+span#checkboxText {
+	color: lightgrey;
+	width: 80%;
+	margin: 20px 0;
+	float: right;
+}
+
 
 /*przycisk wyślij*/
 .submitButton{
