@@ -1,2 +1,1 @@
-Pracuj
-zawsze
+My first workshop in Coderslab Bootcamp
