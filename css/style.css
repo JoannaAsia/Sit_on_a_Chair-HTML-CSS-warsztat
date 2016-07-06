@@ -1,413 +1,485 @@
 /*import czcionki*/
+
 @font-face {
     font-family: 'ralewayregular';
-    src: url('../fonts/raleway-regular.woff2') format('woff2'),
-         url('../fonts/raleway-regular.woff') format('woff');
+    src: url('../fonts/raleway-regular.woff2') format('woff2'), url('../fonts/raleway-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	font-family: "ralewayregular", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "ralewayregular", sans-serif;
 }
 
+
 /*szerokość głównego bloku na stronie*/
+
 .main_width {
-	width: 1020px;
-	margin: auto;
+    width: 1020px;
+    margin: auto;
 }
 
 
 /* header style */
+
 #headerBlack {
-	color: white;
-	background-color: black;
+    color: white;
+    background-color: black;
 }
+
+
 /*logo w headerze*/
+
 p#logo {
-	float: left;
-	line-height: 20px;	
-	margin: 0;
-	padding: 15px;
-	text-transform: uppercase;
+    float: left;
+    line-height: 20px;
+    margin: 0;
+    padding: 15px;
+    text-transform: uppercase;
 }
+
+
 /*menu*/
+
 nav {
-	float:right;
+    float: right;
 }
 
 .clear {
-	clear: both;
+    clear: both;
 }
 
 ul.mainList {
-	margin: 0;
+    margin: 0;
 }
 
 ul.mainList > li {
-	display: inline-block;
+    display: inline-block;
 }
 
 ul.mainList > li > a {
-	color: white;
-	line-height: 20px;
-	padding: 15px;
-	text-transform: uppercase;
-	text-decoration: none;
-	display: block;
+    color: white;
+    line-height: 20px;
+    padding: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
 }
 
+
 /*rozwijane menu*/
+
 ul.mainList ul {
-	color: white;
-	display: none; 
-	padding: 0;
-	margin: 0;
-	position: absolute;
-	list-style-type: none;
+    color: white;
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    list-style-type: none;
 }
 
 ul.mainList li:hover > ul {
-	display: block;
+    display: block;
 }
 
 ul.mainList ul a {
-	color: white;
-	background-color: black;
-	padding: 10px 20px;
-	text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    text-decoration: none;
     display: block;
 }
+
+
 /*trójkącik*/
- .triangleUp{
-	width: 0; 
-	height: 0; 
-	background-color: transparent;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-  	border-bottom: 10px solid black;
-  	position: relative;
-  	left: 50px;
-}
-/*wszystkie pogrubione turkusowe napisy*/
-span {
-	color: turquoise;
-	font-weight: 900;
+
+.triangleUp {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    position: relative;
+    left: 50px;
 }
 
+
+/*wszystkie pogrubione turkusowe napisy*/
+
+span {
+    color: turquoise;
+    font-weight: 900;
+}
+
+
 /*cd header ze zdjęciem*/
-#headerBackground{
-	padding: 10px;
-	background: rgba(255,255,255,1);
-	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(227,224,227,1) 70%, rgba(219,219,219,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(40%, rgba(246,246,246,1)), color-stop(70%, rgba(227,224,227,1)), color-stop(100%, rgba(219,219,219,1)));
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(227,224,227,1) 70%, rgba(219,219,219,1) 100%);
-	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(227,224,227,1) 70%, rgba(219,219,219,1) 100%);
-	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(227,224,227,1) 70%, rgba(219,219,219,1) 100%);
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(227,224,227,1) 70%, rgba(219,219,219,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb', GradientType=0 );
+
+#headerBackground {
+    padding: 10px;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 40%, rgba(227, 224, 227, 1) 70%, rgba(219, 219, 219, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(40%, rgba(246, 246, 246, 1)), color-stop(70%, rgba(227, 224, 227, 1)), color-stop(100%, rgba(219, 219, 219, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 40%, rgba(227, 224, 227, 1) 70%, rgba(219, 219, 219, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 40%, rgba(227, 224, 227, 1) 70%, rgba(219, 219, 219, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 40%, rgba(227, 224, 227, 1) 70%, rgba(219, 219, 219, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 40%, rgba(227, 224, 227, 1) 70%, rgba(219, 219, 219, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb', GradientType=0);
 }
 
 .inlineBlockHeader {
-	text-align: center;
-	vertical-align: top;
-	display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
 }
 
-.arrow {
-	width: 100px;
-	height: 100px;
-	margin: 150px 10px;
-	font-size: 80px;
-	color: turquoise;
+.arrowBtn {
+    background: rgba(255, 255, 255, 0);
+    width: 100px;
+    height: 100px;
+    margin: 150px 10px;
+    font-size: 80px;
+    color: turquoise;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
 }
 
-#blackChair {
-	height: 300px;
-	width: 390px;
-	margin: 50px 0;
+.slider {
+    overflow: hidden;
+    width: 390px;
+}
+
+.headerChairs {
+    height: 300px;
+    width: 390px;
+    margin: 50px 0;
+    display: none;
+}
+
+.headerChairs:nth-of-type(1) {
+    display: inline-block;
 }
 
 #headerText {
-	height: 260px;
-	width: 365px;
-	margin: 50px 0;
-	padding: 20px 0;
+    height: 260px;
+    width: 365px;
+    margin: 50px 0;
+    padding: 20px 0;
 }
 
 #headerText h1 {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 a.button {
-	color: white;
-	background-color: turquoise;
-	padding: 10px 20px;
-	border-radius: 10px;
-	text-decoration: none;
-	text-transform: uppercase;
+    color: white;
+    background-color: turquoise;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .inlineBlockSec1 {
-	width: 300px;
-	margin: 40px 5px;
-	display: inline-block;
-	vertical-align: top;
-	
-	
+    width: 300px;
+    margin: 40px 5px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #section1Text {
-	width: 260px;
-	padding: 0 20px;
-	border: 1px solid rgb(230,230,230);
+	height: 205px;
+    width: 260px;
+    padding: 0 20px;
+    border: 1px solid rgb(230, 230, 230);
+    font-size: 14px;
 }
 
 h4 {
-	border-bottom: 5px solid turquoise;
-	width: 120px;
+    border-bottom: 5px solid turquoise;
+    width: 120px;
 }
 
 .inlineBlockSec1 img {
-	width: 300px;
+    width: 300px;
 }
 
 #chairClaire {
-	position: relative;
-	margin-left: 40px;
+    position: relative;
+    margin-left: 40px;
 }
 
 div.chair_img {
-	position: absolute;
-	z-index: 1;
-	bottom: 20px;
-	width: 300px;
-	background-color: rgba(255,255,255, 0.5);
-	line-height: 20px;
-	color: black;
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    line-height: 20px;
+    color: black;
 }
 
 div.chair_img p {
-	border-bottom: 5px solid turquoise;
-	margin-left: 15px;
-	width: 200px;
-	font-weight: bolder;
+    border-bottom: 5px solid turquoise;
+    margin-left: 15px;
+    width: 200px;
+    font-weight: bolder;
 }
 
 #chairMargarita {
-	position: relative;
+    position: relative;
 }
 
 #section2Background {
-	background-color: rgb(243,243,243);
-	padding: 10px;
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
 }
+
 
 /* section 2 style */
 
+
 /*podkreślenie nagłówków*/
+
 .bottomBorder {
-	width: 300px;
-	margin-left: 40px;
-	padding-top: 20px;
-	border-bottom: 5px solid turquoise;
-	text-transform: uppercase;
+    width: 300px;
+    margin-left: 40px;
+    padding-top: 20px;
+    border-bottom: 5px solid turquoise;
+    text-transform: uppercase;
 }
+
 
 /*elementy sekcji 2 ustawione inline-block*/
-.inlineBlockSec2{
-	height: 430px;
-	width: 300px;
-	margin: 30px 4px;
-	border: 2px solid rgb(230,230,230);
-	vertical-align: middle;
-	text-align: center;
-	position: relative;
-	display: inline-block;
 
+.inlineBlockSec2 {
+    height: 430px;
+    width: 300px;
+    margin: 30px 4px;
+    border: 2px solid rgb(230, 230, 230);
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    display: inline-block;
 }
+
+
 /*margines elementu najbardziej po lewej*/
-.inlineBlockSec2:first-of-type{
-	margin-left: 40px;
+
+.inlineBlockSec2:first-of-type {
+    margin-left: 40px;
 }
+
+
 /*border elementu po środku*/
-.inlineBlockSec2:nth-of-type(2){
-	border: 2px solid turquoise;
+
+.inlineBlockSec2:nth-of-type(2) {
+    border: 2px solid turquoise;
 }
+
+
 /*margines elementu najbardziej po prawej*/
-.inlineBlockSec2:nth-of-type(3){
-	margin-right: 40px;
+
+.inlineBlockSec2:nth-of-type(3) {
+    margin-right: 40px;
 }
+
 
 /*stylowanie tablic sekcji 2*/
-.planChoice{
-	background-color: rgb(250,250,250);
-	padding: 5px 0;
-}
 
-.planChoice h3{
-	color: turquoise;
-	margin-top: 30px;
-	text-transform: uppercase;
-}
-/*środkowa tablica*/
-.standardPlan{
-	color: white;
-	background-color: turquoise;
+.planChoice {
+    background-color: rgb(250, 250, 250);
     padding: 5px 0;
 }
 
-.standardPlan h3{
-	margin-top: 30px;
-	text-transform: uppercase;
+.planChoice h3 {
+    color: turquoise;
+    margin-top: 30px;
+    text-transform: uppercase;
 }
+
+
+/*środkowa tablica*/
+
+.standardPlan {
+    color: white;
+    background-color: turquoise;
+    padding: 5px 0;
+}
+
+.standardPlan h3 {
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
 
 /*okrąg z ceną*/
-.priceCircle{
-	color: grey;
-	background-color: white;
-	height: 100px;
-	width: 100px;
-	margin: 20px 100px;
-	border: 1px solid rgb(230,230,230);
-	border-radius: 50%;
-	font-size: 16px;
-	font-weight: 900;
-	text-align: center;
+
+.priceCircle {
+    color: grey;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    margin: 20px 100px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
 }
 
-.priceCircle p{
-	margin-top: 30px;
+.priceCircle p {
+    margin-top: 30px;
 }
+
+
 /*okrąg z ceną w środkowej tablicy*/
-.standardPriceCircle{
-	color: turquoise;
-	background-color: white;
+
+.standardPriceCircle {
+    color: turquoise;
+    background-color: white;
 }
+
 
 /*stylowanie paragrafów w tablicach sekcji 2*/
-.planFeatures p{
-	line-height: 40px;
-	margin: 0;
+
+.planFeatures p {
+    line-height: 40px;
+    margin: 0;
 }
 
-.planFeatures p:nth-child(2n+1){
-	color: rgb(150,150,150);
-	background-color: rgb(230,230,230);
+.planFeatures p:nth-child(2n+1) {
+    color: rgb(150, 150, 150);
+    background-color: rgb(230, 230, 230);
 }
 
-.planFeatures p:nth-child(2n+2){
-	color: rgb(150,150,150);
+.planFeatures p:nth-child(2n+2) {
+    color: rgb(150, 150, 150);
 }
 
-#standardPlanFeatures p:nth-child(2n+1){
-	color: rgb(150,150,150);
-	background-color: rgb(250,250,250);
-	margin: 0;
-	line-height: 40px;
+#standardPlanFeatures p:nth-child(2n+1) {
+    color: rgb(150, 150, 150);
+    background-color: rgb(250, 250, 250);
+    margin: 0;
+    line-height: 40px;
 }
+
+
 /* stylowanie divów i należących do nich przycisków DOŁĄCZ*/
-#btnOne{
-	background-color: rgb(250,250,250);
-	height: 146px;
-	position: relative;
+
+#btnOne {
+    background-color: rgb(250, 250, 250);
+    height: 146px;
+    position: relative;
 }
 
 #btnOne a {
-	position: absolute;
-	right: 100px;
-	bottom: 20px;
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
 }
 
-#btnTwo{
-	background-color: turquoise;
-	height: 106px;
-	position: relative;
+#btnTwo {
+    background-color: turquoise;
+    height: 106px;
+    position: relative;
 }
 
 #btnTwo a {
-	color: turquoise;
-	background-color: white;
-	position: absolute;
-	bottom: 20px;
-	right: 100px;
+    color: turquoise;
+    background-color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
 }
 
-#btnThree{
-	height: 66px;
-	position: relative;
-	background-color: rgb(250,250,250);
+#btnThree {
+    height: 66px;
+    position: relative;
+    background-color: rgb(250, 250, 250);
 }
 
-#btnThree a{
-	position: absolute;
-	bottom: 20px;
-	right: 100px;
+#btnThree a {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
 }
+
 
 /*kółko z kropką nad tablicami*/
+
 .dot {
-	background-color: white;
-	height: 60px;
-	width: 60px;
-	border: 2px solid rgb(230,230,230);
-	border-radius: 50%;
-	position: absolute;
-	top: -30px;
-	left: 120px;
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 120px;
 }
 
 .dot > span {
-	background-color: rgb(240,240,240);
-	height: 30px;
-	width: 30px;
-	margin: 14px;
-	border: 1px solid rgb(240,240,240);
-	border-radius: 50%;
-	display: inline-block;
+    background-color: rgb(240, 240, 240);
+    height: 30px;
+    width: 30px;
+    margin: 14px;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 50%;
+    display: inline-block;
 }
+
+
 /*kółko w środkowym elemencie*/
-#standardPlanDot{
-	background-color: turquoise;
-	border: none;
+
+#standardPlanDot {
+    background-color: turquoise;
+    border: none;
 }
 
-#standardPlanDot > span{
-	background-color: white;
-	border: none;
+#standardPlanDot > span {
+    background-color: white;
+    border: none;
 }
+
+
 /* section 3 style */
-.inlineBlockSec3{
-	height: 400px;
-	vertical-align: top;
-	display: inline-block;
+
+.inlineBlockSec3 {
+    height: 400px;
+    vertical-align: top;
+    display: inline-block;
 }
+
+
 /*styl formularza*/
-form *{
-	font-family: "ralewayregular";
+
+form * {
+    font-family: "ralewayregular";
 }
 
-.inlineBlockSec3 input[type=text]{
-	height: 50px;
-	width: 520px;
-	margin: 5px 0 15px 40px;
-	padding-left: 10px;
-	border: 1px solid turquoise;
-	vertical-align: top;
-	font-size: 20px;
-
+.inlineBlockSec3 input[type=text] {
+    height: 50px;
+    width: 520px;
+    margin: 5px 0 15px 40px;
+    padding-left: 10px;
+    border: 1px solid turquoise;
+    vertical-align: top;
+    font-size: 20px;
 }
 
-.inlineBlockSec3 input[type=text]:nth-of-type(3){
-	padding-bottom: 120px;
+.inlineBlockSec3 input[type=text]:nth-of-type(3) {
+    padding-bottom: 120px;
 }
 
 div.inlineBlockSec3 {
-	width: 350px;
-	margin: -30px 40px 0 40px;
+    width: 350px;
+    margin: -30px 40px 0 40px;
 }
+
 
 /*CHECKBOX!!!!!!!!*/
 
@@ -431,51 +503,55 @@ input[type="checkbox"]:checked + label p {
 }
 
 span#checkboxText {
-	color: lightgrey;
-	width: 80%;
-	margin: 20px 0;
-	float: right;
+    color: lightgrey;
+    width: 80%;
+    margin: 20px 0;
+    float: right;
 }
 
 
 /*przycisk wyślij*/
-.submitButton{
-	color: white;
-	background-color: turquoise;
-	height: 50px;
-	width: 90%;
-	margin-top: 10px;
-	border: 1px solid turquoise;
-	border-radius: 10px;
-	font-size: 22px;
+
+.submitButton {
+    color: white;
+    background-color: turquoise;
+    height: 50px;
+    width: 90%;
+    margin-top: 10px;
+    border: 1px solid turquoise;
+    border-radius: 10px;
+    font-size: 22px;
 }
 
+
 /* stylowanie footera */
+
 footer {
-	line-height: 40px
+    line-height: 40px
 }
+
 .foot_left {
-	float: left;
-	font-size: 12px;
-	margin-left: 40px;
+    float: left;
+    font-size: 12px;
+    margin-left: 40px;
 }
 
 .foot_right {
-	display: inline-block;
-	float: right;
-	margin-right: 40px;
+    display: inline-block;
+    float: right;
+    margin-right: 40px;
 }
 
 img.foot_right {
-	margin: 15px 5px;
+    margin: 15px 5px;
 }
 
 p.foot_right {
-	text-transform: uppercase;
-	margin-left: 50px
+    text-transform: uppercase;
+    margin-left: 50px
 }
 
 p.foot_right span {
-	color: grey;
-	font-weight: bold;
+    color: grey;
+    font-weight: bold;
 }
