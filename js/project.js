@@ -9,7 +9,7 @@ $(document).ready(function() {
     prevBtn.on('click', function() {
         if (currentIndex >= 0) {
             sliderImg.eq(currentIndex).fadeOut(750);
-            sliderImg.eq(currentIndex - 1).delay(750).fadeIn(1000);
+            sliderImg.eq(currentIndex - 1).delay(1000).fadeIn(1000);
             currentIndex--;
             if (currentIndex < 0) {
                 // sliderImg.eq(currentIndex).hide();
@@ -20,7 +20,7 @@ $(document).ready(function() {
     nextBtn.on('click', function() {
         if (currentIndex < sliderImg.length - 1) {
             sliderImg.eq(currentIndex).fadeOut(750);
-            sliderImg.eq(currentIndex + 1).delay(750).fadeIn(1000);
+            sliderImg.eq(currentIndex + 1).delay(1000).fadeIn(1000);
             currentIndex++;
             if (currentIndex == sliderImg.length - 1) {
                 // sliderImg.eq(currentIndex).hide();

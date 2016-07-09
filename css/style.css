@@ -157,6 +157,8 @@ span {
     width: 390px;
     margin: 50px 0;
     display: none;
+    position: absolute;
+    left: 122px;
 }
 
 .headerChairs:nth-of-type(1) {
@@ -191,7 +193,7 @@ a.button {
 }
 
 #section1Text {
-	height: 205px;
+    height: 205px;
     width: 260px;
     padding: 0 20px;
     border: 1px solid rgb(230, 230, 230);
@@ -445,10 +447,53 @@ div.chair_img p {
     border: none;
 }
 
+/* stylowanie sekcji 3 */
+.leftFloat {
+    float: left;
+}
+.rightFloat {
+    float: right;
+    text-align: right;
+}
+.designYourChair {
+    width: 30%;
+    margin-left: 40px;
+}  
 
-/* section 3 style */
+.selectContainer {
+    overflow: hidden;
+    background: white;
+    border: 1px solid turquoise;
+    height: 20px;
+    padding: 10px;
+    margin: 30px;
+    position: relative;
 
-.inlineBlockSec3 {
+}
+
+.selectContainer select {
+    background: transparent;
+    border: 0;
+    width: 120%;
+    display: block;
+    position: absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    left:0;
+}
+
+.selectContainer option p {
+    position: relative;
+    padding: 10px;
+}
+
+
+
+
+/* stylowanie sekcji 4 */
+
+.inlineBlockSec4 {
     height: 400px;
     vertical-align: top;
     display: inline-block;
@@ -461,7 +506,7 @@ form * {
     font-family: "ralewayregular";
 }
 
-.inlineBlockSec3 input[type=text] {
+.inlineBlockSec4 input[type=text] {
     height: 50px;
     width: 520px;
     margin: 5px 0 15px 40px;
@@ -471,11 +516,11 @@ form * {
     font-size: 20px;
 }
 
-.inlineBlockSec3 input[type=text]:nth-of-type(3) {
+.inlineBlockSec4 input[type=text]:nth-of-type(3) {
     padding-bottom: 120px;
 }
 
-div.inlineBlockSec3 {
+div.inlineBlockSec4 {
     width: 350px;
     margin: -30px 40px 0 40px;
 }
@@ -522,7 +567,6 @@ span#checkboxText {
     border-radius: 10px;
     font-size: 22px;
 }
-
 
 /* stylowanie footera */
 
