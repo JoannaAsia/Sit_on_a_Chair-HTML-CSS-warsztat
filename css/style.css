@@ -158,7 +158,7 @@ span {
     margin: 50px 0;
     display: none;
     position: absolute;
-    left: 122px;
+    left: 200px;
 }
 
 .headerChairs:nth-of-type(1) {
@@ -198,6 +198,14 @@ a.button {
     padding: 0 20px;
     border: 1px solid rgb(230, 230, 230);
     font-size: 14px;
+    transition: width .3s, height .6s;
+}
+
+#section1Text:hover {
+    width: 265px;
+    height: 210px;
+    background-color: #EFFFFF;
+    box-shadow: -7px -5px 5px grey;
 }
 
 h4 {
@@ -207,6 +215,13 @@ h4 {
 
 .inlineBlockSec1 img {
     width: 300px;
+    transition: width .3s, height .6s;
+}
+
+.inlineBlockSec1 img:hover {
+    width: 305px;
+    height: 210px;
+    box-shadow: -7px -5px 5px grey;
 }
 
 #chairClaire {
@@ -218,7 +233,7 @@ div.chair_img {
     position: absolute;
     z-index: 1;
     bottom: 20px;
-    width: 300px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
     line-height: 20px;
     color: black;
@@ -448,6 +463,13 @@ div.chair_img p {
 }
 
 /* stylowanie sekcji 3 */
+.flexbox{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
 .leftFloat {
     float: left;
 }
@@ -456,9 +478,10 @@ div.chair_img p {
     text-align: right;
 }
 .designYourChair {
+    height: 350px;
     width: 30%;
     margin-left: 40px;
-}  
+}
 
 .selectContainer {
     overflow: hidden;
@@ -466,15 +489,17 @@ div.chair_img p {
     border: 1px solid turquoise;
     height: 20px;
     padding: 10px;
-    margin: 30px;
+    margin: 30px 0 35px 0;
     position: relative;
 
 }
 
 .selectContainer select {
     background: transparent;
+    width: 100%;
     border: 0;
-    width: 120%;
+    font-size: 18px;
+    font-family: "ralewayregular";
     display: block;
     position: absolute;
     right:0;
@@ -483,15 +508,75 @@ div.chair_img p {
     left:0;
 }
 
-.selectContainer option p {
-    position: relative;
-    padding: 10px;
+#checkboxText2 {
+    float: right;
+    width: 80%;
+    margin: 30px 0;
+    color: lightgrey;
+    font-size: 20px;
 }
 
+#checkboxText2 + p {
+    margin-top: 10px;
+    border: 1px solid turquoise;
+}
 
+.redChair {
+    height: 230px;
+    width: 28%;
+    margin: 30px 0;
+}
+.summary {
+    width: 30%;
+}
 
+.yourOrder {
+    height: 220px;
+    width: 100%;
+    margin: 30px 0;
+    position: relative;
+    border: 1px solid lightgrey;
+}
+
+#yourChair {
+    width: 60%;
+    height: 70%;
+    border-right: 1px solid lightgrey;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#yourChair p {
+    margin: 5px;
+    color: turquoise;
+}
+
+#yourCost {
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#yourTotalCost {
+    width: 100%;
+    height: 30%;
+    border-top: 1px solid lightgrey;
+    position: absolute;
+    bottom: 0;
+}
+#yourTotalCost p {
+    margin: 5px;
+}
 
 /* stylowanie sekcji 4 */
+#sec4background {
+    background-image: url(../images/grey-background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 
 .inlineBlockSec4 {
     height: 400px;
@@ -533,13 +618,14 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"] + label p {
-    display: inline-block;
+    background: white;
     width: 48px;
     height: 40px;
     margin: 20px 0;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid lightgrey;
+    border: 1px solid turquoise;
+    display: inline-block;
     float: left;
 }
 
@@ -548,7 +634,7 @@ input[type="checkbox"]:checked + label p {
 }
 
 span#checkboxText {
-    color: lightgrey;
+    color: grey;
     width: 80%;
     margin: 20px 0;
     float: right;
@@ -561,7 +647,7 @@ span#checkboxText {
     color: white;
     background-color: turquoise;
     height: 50px;
-    width: 90%;
+    width: 100%;
     margin-top: 10px;
     border: 1px solid turquoise;
     border-radius: 10px;
@@ -598,4 +684,11 @@ p.foot_right {
 p.foot_right span {
     color: grey;
     font-weight: bold;
+}
+
+
+@keyframes scaleUp {
+    from {
+
+    }
 }

@@ -152,42 +152,52 @@
             <h3 class="bottomBorder leftFloat">Skomponuj swoje krzesło</h3>
             <h3 class="bottomBorder rightFloat">Podsumowanie</h3>
             <div class="clear"></div>
-            <div class="designYourChair">
-                <div class="selectContainer">
-                    <form>
+            <div class="flexbox">
+                <div class="designYourChair">
+                    <div class="selectContainer">
                         <select>
                             <option value="" disabled selected>Wybierz rodzaj</option>
                             <option value="Clair">chair Clair</option>
                             <option value="Margarita">chair Margarita</option>
                             <option value="Selena">chair Selena</option>
                         </select>
+                    </div>
+                    <div class="selectContainer">
+                        <select>
+                            <option value="" disabled selected>Wybierz kolor</option>
+                            <option value="red">czerwony</option>
+                            <option value="black">czarny</option>
+                            <option value="orange">pomarańczowy</option>
+                            <option value="white">biały</option>
+                        </select>
+                    </div>
+                    <div class="selectContainer">
+                        <select>
+                            <option value="" disabled selected>Wybierz materiał</option>
+                            <option value="fabric">tkanina</option>
+                            <option value="leather">skóra</option>
+                            <option value="suede">zamsz</option>
+                        </select>
+                    </div>
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2">
+                        <p></p><span id="checkboxText2">Transport</span></label>
+                    <div class="clear"></div>
                 </div>
-                <div class="selectContainer">
-                    <select>
-                        <option value="" disabled selected>Wybierz kolor</option>
-                        <option value="red">czerwony</option>
-                        <option value="black">czarny</option>
-                        <option value="orange">pomarańczowy</option>
-                        <option value="white">biały</option>
-                    </select>
+                <img src="images/red_chair.png" class="redChair">
+                <div class="summary">
+                    <div class="yourOrder">
+                        <div id="yourChair"><p>Twój fotel</p></div>
+                        <div id="yourCost"></div>
+                        <div id="yourTotalCost"><p>Suma</p></div>
+                    </div>
+                    <input type="submit" class="submitButton" value="ZAMAWIAM"> 
                 </div>
-                <div class="selectContainer">
-                    <select>
-                        <option value="" disabled selected>Wybierz materiał</option>
-                        <option value="fabric">tkanina</option>
-                        <option value="leather">skóra</option>
-                        <option value="suede">zamsz</option>
-                    </select>
-                </div>
-                </form>
             </div>
-            <div></div>
-            <div></div>
-        </div>
         </div>
     </section>
     <!-- sekcja 4 -->
-    <section>
+    <section id="sec4background">
         <div class="main_width">
             <h3 class="bottomBorder">Kontakt</h3>
             <form class="inlineBlockSec4">
